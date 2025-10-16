@@ -6,6 +6,9 @@
 	  <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
     <IsRoslynComponent>true</IsRoslynComponent>
 	  <PackageId>SourceGenTest</PackageId>
+	  <MinVerTagPrefix>v</MinVerTagPrefix>
+	  <MinVerDefaultPreReleaseIdentifiers>beta</MinVerDefaultPreReleaseIdentifiers>
+	  <MinVerVerbosity>diagnostic</MinVerVerbosity>
   </PropertyGroup>
 
   <ItemGroup>
