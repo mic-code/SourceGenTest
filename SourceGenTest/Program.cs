@@ -1,10 +1,17 @@
-﻿namespace SourceGenTest
+﻿using SourceGenAttribute;
+
+namespace SourceGenTest;
+
+internal class Program
 {
-    internal class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            //Console.WriteLine(GeneratedNamespace.GeneratedClass.SayHello());
-        }
+        var sample = new SampleClass();
+        Console.WriteLine(sample.GeneratedMethod());
     }
+}
+
+[GenStuff]
+public class SampleClass
+{
 }
